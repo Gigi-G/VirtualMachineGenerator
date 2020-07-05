@@ -32,7 +32,7 @@ Virtual Machine Generator is a simple multiplatform application that you can use
 
 
 
-## Hoe to use it
+## How to use it
 
 1. Clone or Download this repository
 
