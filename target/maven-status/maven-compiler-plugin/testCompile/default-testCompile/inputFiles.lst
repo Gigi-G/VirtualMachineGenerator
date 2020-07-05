@@ -1,0 +1,6 @@
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/operating_system/TestOperatingSystem.java
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/implementor/TestVirtualMachine.java
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/AppTest.java
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/keylistener/TestKeyListener.java
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/abstraction/TestSystemGenerateMachine.java
+/home/luigi/RetiDiCalcolatori/VirtualMachineGenerator/src/test/java/com/gigi_g/virtualmachinegenerator/system/TestGenerate.java

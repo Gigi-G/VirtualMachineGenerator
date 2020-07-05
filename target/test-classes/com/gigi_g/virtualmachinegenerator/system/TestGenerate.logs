@@ -1,0 +1,33 @@
+
+***Si consiglia di visualizzare il file Test.logs con il comando cat***
+
+Enter the name of the machine you want to clone: 
+VBoxManage snapshot TestBaseMachine delete Snapshot
+VBoxManage snapshot TestBaseMachine take Snapshot
+Enter the number of virtual machines to be created: 
+Enter the name of the new clone: 
+VBoxManage clonevm TestBaseMachine --snapshot Snapshot --name A --options link --register
+Network card nic1 intnet/[none]: 
+Enter the name of the lan for nic1: 
+Network card nic2 intnet/[none]: 
+Network card nic3 intnet/[none]: 
+Network card nic4 intnet/[none]: 
+VBoxManage modifyvm A --nic1 intnet --intnet1 lan01 --nic2 none --nic3 none --nic4 none
+Enter the name of the new clone: 
+VBoxManage clonevm TestBaseMachine --snapshot Snapshot --name B --options link --register
+Network card nic1 intnet/[none]: 
+Enter the name of the lan for nic1: 
+Network card nic2 intnet/[none]: 
+Enter the name of the lan for nic2: 
+Network card nic3 intnet/[none]: 
+Network card nic4 intnet/[none]: 
+VBoxManage modifyvm B --nic1 intnet --intnet1 lan01 --nic2 intnet --intnet2 lan02 --nic3 none --nic4 none
+Enter the name of the new clone: 
+VBoxManage clonevm TestBaseMachine --snapshot Snapshot --name C --options link --register
+Network card nic1 intnet/[none]: 
+Network card nic2 intnet/[none]: 
+Enter the name of the lan for nic2: 
+Network card nic3 intnet/[none]: 
+Network card nic4 intnet/[none]: 
+VBoxManage modifyvm C --nic1 none --nic2 intnet --intnet2 lan02 --nic3 none --nic4 none
+TestApp.testApp(): OK
