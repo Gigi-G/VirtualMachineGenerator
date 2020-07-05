@@ -10,7 +10,7 @@
 ------
 
 ## Test
-
+![build](https://github.com/Gigi-G/VirtualMachineGenerator/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 
 
