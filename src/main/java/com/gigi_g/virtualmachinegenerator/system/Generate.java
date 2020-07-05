@@ -17,14 +17,14 @@ public class Generate {
 
     public void init() {
         nameMachine = executionSystem.execute();
-        systemGenerateMachine.systemCall("VBoxManage snapshot " + nameMachine + " delete Snapshot");
-        systemGenerateMachine.systemCall("VBoxManage snapshot " + nameMachine + " take Snapshot");
+        systemGenerateMachine.systemCall("snapshot " + nameMachine + " delete Snapshot");
+        systemGenerateMachine.systemCall("snapshot " + nameMachine + " take Snapshot");
     }
 
     private void initTest() {
         nameMachine = executionSystem.execute();
-        System.out.println("VBoxManage snapshot " + nameMachine + " delete Snapshot");
-        System.out.println("VBoxManage snapshot " + nameMachine + " take Snapshot");
+        System.out.println("snapshot " + nameMachine + " delete Snapshot");
+        System.out.println("snapshot " + nameMachine + " take Snapshot");
     }
 
     private int machineNumber() {
@@ -37,8 +37,8 @@ public class Generate {
         String cloneName;
         for(int i=0; i<n; i++) {
             cloneName = executionSystem.execute();
-            systemGenerateMachine.systemCall("VBoxManage clonevm " + nameMachine + " --snapshot Snapshot --name " + cloneName + " --options link --register");
-            systemGenerateMachine.systemCall("VBoxManage modifyvm " + cloneName + " " + executionSystem.execute());
+            systemGenerateMachine.systemCall("clonevm " + nameMachine + " --snapshot Snapshot --name " + cloneName + " --options link --register");
+            systemGenerateMachine.systemCall("modifyvm " + cloneName + " " + executionSystem.execute());
         }
     }
 

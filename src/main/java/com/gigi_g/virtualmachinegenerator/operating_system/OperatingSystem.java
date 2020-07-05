@@ -13,7 +13,7 @@ public class OperatingSystem {
     private OperatingSystem() {}
     
     public static IVirtualMachine getOS() {
-        return genMap.getOrDefault(System.getProperty("os.name"), VirtualMachineUnix::new).get();
+        return genMap.getOrDefault(System.getProperty("os.name").contains("Windows")?"Windows":"Linux", VirtualMachineUnix::new).get();
     }
 
 }

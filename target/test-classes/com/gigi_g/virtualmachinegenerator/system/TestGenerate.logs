@@ -2,8 +2,8 @@
 ***Si consiglia di visualizzare il file Test.logs con il comando cat***
 
 Enter the name of the machine you want to clone: 
-VBoxManage snapshot TestBaseMachine delete Snapshot
-VBoxManage snapshot TestBaseMachine take Snapshot
+snapshot TestBaseMachine delete Snapshot
+snapshot TestBaseMachine take Snapshot
 Enter the number of virtual machines to be created: 
 Enter the name of the new clone: 
 VBoxManage clonevm TestBaseMachine --snapshot Snapshot --name A --options link --register
